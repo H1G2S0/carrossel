@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
 
     <title>Carrossel Pokémon</title>
 </head>
@@ -22,34 +23,35 @@
     </header>
 
     <main class="pokemon-slider">
-        <button class="btn-seta">
+        <button class="btn-seta btn-voltar">
             <img src="./src/imagens/seta.png" alt="seta voltar">
         </button>
 
         <ul class="lista-pokemons">
-            <li>
-                <div>
-                    <h2>Pikachu</h2>
-                    <p>HP 300</p>
+            <li class="cartao selecionado fundo-pikachu">
+                <div class="informacoes">
+                    <h2 class="nome">Pikachu</h2>
+                    <p class="vida">HP 300</p>
                 </div>
 
-                <div>
-                    <img src="./src/imagens/pikachu.png" alt="Pikachu">
+                <div class="container-imagem">
+                    <img src="./src/imagens/pikachu.png" alt="Pikachu" class="imagem-pokemon">
                 </div>
 
-                <div>
-                    <h3>Descrição</h3>
-                    <p>
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sed voluptas corrupti amet voluptatibus vitae quam vel, vero nemo magnam eum a, delectus quasi doloremque? Recusandae eos officia dolores omnis.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima quis est cumque ipsam! Libero possimus mollitia doloribus atque quas. Dolore, ullam quidem ducimus autem saepe itaque expedita reiciendis voluptatibus?
                     </p>
                 </div>
 
             </li> 
 
-            <!-- <li>
-                <div>
-                    <h2>Charizard</h2>
-                    <p>HP 800</p>
+            <li class="cartao fundo-charizard">
+                <div class="informacoes">
+                    <h2 class="nome">Charizard</h2>
+                    <p class="vida">HP 800</p>
                 </div>
 
                 <div>
@@ -65,10 +67,10 @@
 
             </li>
 
-            <li>
-                <div>
-                    <h2>Mewtwo</h2>
-                    <p>HP 1200</p>
+            <li class="cartao fundo-mewtwo">
+                <div class="informacoes">
+                    <h2 class="nome">Mewtwo</h2>
+                    <p class="vida">HP 1200</p>
                 </div>
 
                 <div>
@@ -81,7 +83,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nostrum, consequatur modi doloribus ex error reprehenderit rem cum pariatur nemo voluptates recusandae corrupti incidunt nobis excepturi ea quia atque culpa.
                     </p>
                 </div>
-            </li> -->
+            </li>
         </ul>
 
         <button class="btn-seta">
