@@ -30,7 +30,6 @@ btnAvancar.addEventListener('click', function(){
     if (cartaoAtual === cartoes.length - 1) return;
 
     esconderCartaoSelecionado();
-    
     cartaoAtual++;
     mostrarCartao(cartaoAtual);
 })
